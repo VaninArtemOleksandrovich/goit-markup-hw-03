@@ -29,6 +29,8 @@ body {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -50,6 +52,7 @@ body {
 
 button {
   cursor: pointer;
+  text-align: center;
 }
 /* Логотип */
 .logo {
@@ -93,12 +96,14 @@ button {
 /* Секція головна */
 .hero {
   background-color: var(--black-background-color);
+  text-align: center;
 }
 
 .hero-title {
   
   color: var(--white-text-color);
-
+margin-top: 0;
+margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
