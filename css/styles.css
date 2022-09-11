@@ -1,4 +1,13 @@
 /* Загальні стилі */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -76,9 +85,9 @@ button {
 /* Контакти */
 .contact-link {
   color: var(--secondary-text-color);
-
   font-weight: 500;
   letter-spacing: 0.02em;
+ 
 }
 
 /* Секція головна */
@@ -129,7 +138,6 @@ border: none;}
 }
 .adv-description {
   color: var(--secondary-text-color);
-
   line-height: 1.71;
 }
 
