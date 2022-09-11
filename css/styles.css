@@ -83,10 +83,11 @@ button {
 
 /* Секція головна */
 .hero {
-  background-color: var(--black-background-color);
+  background-color: green;
 }
 
 .hero-title {
+  
   color: var(--white-text-color);
 
   font-weight: 900;
