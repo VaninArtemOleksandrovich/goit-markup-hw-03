@@ -1,12 +1,5 @@
 /* Загальні стилі */
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+
 
 :root {
   --primary-text-color: #212121;
@@ -27,16 +20,30 @@ body {
   line-height: 1.14;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p { 
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -50,19 +57,22 @@ body {
   overflow: hidden;
 }
 
-button {
-  cursor: pointer;
-  text-align: center;
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid var(--header-border-color);
 }
 /* Логотип */
 .logo {
   color: var(--logo-text-color);
-
+margin-left: 40px;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
+
 
 .logo:visited {
   color: var(--primary-text-color);
@@ -75,6 +85,27 @@ button {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+.nav-list {
+  display:flex;
+  margin-left: 70px;
+  margin-right: 50px;
+  outline: 2px solid tomato;
+}
+
+.contacts-header-list {
+  margin-left: ;
+  display:flex;
+  outline: 2px solid tomato;
+}
+.nav-item {
+  margin-right: 0 ;
+  margin-left: 12px;
+  margin-right: 150px;
+}
+
+.contact-time:not(:last-child) {
+    margin-right: 50px;
+  }
 
 .hover-color:hover,
 .hover-color:focus {
@@ -90,37 +121,40 @@ button {
   color: var(--secondary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
- 
+ display: flex;
 }
 
 /* Секція головна */
 .hero {
   background-color: var(--black-background-color);
   text-align: center;
+
+}
+button {
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .hero-title {
-  
   color: var(--white-text-color);
-margin-top: 0;
-margin-bottom: 0;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-border-radius: 4px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border: none; border-radius: 4px;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border: none;}
+
+  max-width: 696px;
+  margin: 0 auto 30px;
+  padding-top: 200px;
+}
 
 /*секція герой*/
 .hero-baton {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -132,6 +166,13 @@ border: none;}
 }
 
 /* Секція переваги */
+.adv-time{
+  
+}
+.adv-list {
+  display: flex;
+
+}
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -145,10 +186,30 @@ border: none;}
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
+.advantages {
+  padding-top: 94px;
+}
+.adv-list {
+  display: flex;
+}
+.advantage-item {
+  width: 270px;
+}
 
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+}
+.direction-list {
+  display: flex;
+}
+.direction-item {
+  margin-right: 30px;
+}
 /* Секція команда */
 .teams {
-  background-color: var(--grey-bcg);
+  background-color: var(--grey-bcg);}
+
+  display: flex;
 }
 
 .team-time {
@@ -169,10 +230,27 @@ border: none;}
   line-height: 1.19;
   text-align: center;
 }
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+
 
 /* Footer */
 .footer {
   background-color: var(--black-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-logo-margin {
+  margin-bottom: 20px;
+  margin-left: 0;
+  display:inline-flex;
+}
+.contacts-footer-item:not(:last-child) {
+  margin-bottom: 14px;
 }
 .footer-logo {
   color: var(--white-text-color);
@@ -180,10 +258,11 @@ border: none;}
 
 .contacts-footer-link {
   color: #ffffff;
-
+margin-left: 0px;
   line-height: 1.71;
   font-style: normal;
 }
+
 
 .transparent {
   color: rgba(255, 255, 255, 0.6);
@@ -192,17 +271,24 @@ border: none;}
 /* Сторінка Портфоліо */
 .filter-baton {
   background-color: var(--grey-bcg);
-display: inline-block;
-  border-radius: 4px;
-  border: none;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  border-radius: 4px;
   text-align: center;
   padding: 6px 22px;
 }
-
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 .hover-bcg-color:hover,
 .hover-bcg-color:focus {
   background-color: var(--accent-color);

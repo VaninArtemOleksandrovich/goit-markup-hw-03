@@ -16,47 +16,50 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="logo link" href="./index.html" aria-label="Посилання на домашню сторінку"><span class="current">Web</span>Studio</a>
-        <ul class="nav-list list">
-          <li>
-            <a class="nav-link hover-color link" href="./index.html" aria-label="Посилання на сторінку'Студія'">Студія</a>
+    <header class="header">
+      <div class="conteiner main-nav">
+        <nav class="main-nav">
+          <a class="logo link header-logo" href="./index.html" aria-label="Посилання на домашню сторінку"><span class="current">Web</span>Studio</a>
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a class="nav-link hover-color link" href="./index.html" aria-label="Посилання на сторінку'Студія'">Студія</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link hover-color current link" href="./portfolio.html" aria-label="Посилання на сторінку'Портфоліо'">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link hover-color link" href="" aria-label="Посилання на сторінку з контактами">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-header-list list">
+          <li class="contact-time ">
+            <a class="contact-link hover-color link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
-            <a class="nav-link hover-color current link" href="./portfolio.html" aria-label="Посилання на сторінку'Портфоліо'">Портфоліо</a>
-          </li>
-          <li>
-            <a class="nav-link hover-color link" href="" aria-label="Посилання на сторінку з контактами">Контакти</a>
+          <li class="contact-time ">
+            <a class="contact-link hover-color link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-header-list list">
-        <li class="contact-time ">
-          <a class="contact-link hover-color link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contact-time ">
-          <a class="contact-link hover-color link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
+      </header>
     </header>
     <main>
       <section class="projects">
         <h1 class="visually-hidden">Проєкти</h1>
         <ul class="filter-list list">
-          <li>
+          <li class="filter-item">
             <button class="filter-baton active" type="button">Усі</button>
           </li>
-          <li>
+          <li class="filter-item">
             <button class="filter-baton hover-bcg-color" type="button">Веб-сайти</button>
           </li>
-          <li>
+          <li class="filter-item">
             <button class="filter-baton hover-bcg-color" type="button">Додатки</button>
           </li>
-          <li>
+          <li class="filter-item">
             <button class="filter-baton hover-bcg-color" type="button">Дизайн</button>
           </li>
-          <li>
+          <li class="filter-item">
             <button class="filter-baton hover-bcg-color" type="button">Маркетинг</button>
           </li>
         </ul>
@@ -120,30 +123,30 @@
       </section>
     </main>
     <footer class="footer">
-        <a class="logo link" href="./index.html" aria-label="Посилання на домашню сторінку"
-          ><span class="current">Web</span><span class="footer-logo">Studio</span></a
-        >
-        <address>
-          <ul class="contacts-footer-list list">
-            <li class="contacts-footer-item">
-              <a class="contacts-footer-link link" href="">м. Київ, пр-т Лесі Українки, 26</a>
-            </li>
-            <li class="contacts-footer-item">
-              <a
-                class="contacts-footer-link transparent hover-color link"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts-footer-item">
-              <a class="contacts-footer-link transparent hover-color link" href="tel:+380961111111"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </footer>
-    </body>
-  </html>
-  
-</body></html>
+      <div class="container">
+      <a class="logo link footer-logo-margin" href="./index.html" aria-label="Посилання на домашню сторінку"
+        ><span class="current">Web</span><span class="footer-logo">Studio</span></a
+      >
+      <address>
+        <ul class="contacts-footer-list list">
+          <li class="contacts-footer-item">
+            <a class="contacts-footer-link link" href="">м. Київ, пр-т Лесі Українки, 26</a>
+          </li>
+          <li class="contacts-footer-item">
+            <a
+              class="contacts-footer-link transparent hover-color link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-footer-item">
+            <a class="contacts-footer-link transparent hover-color link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+    </footer>
+  </body>
+</html>
