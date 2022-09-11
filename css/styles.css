@@ -83,7 +83,7 @@ button {
 
 /* Секція головна */
 .hero {
-  background-color: green;
+  background-color: var(--black-background-color);
 }
 
 .hero-title {
