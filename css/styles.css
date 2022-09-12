@@ -88,7 +88,8 @@ margin-left: 40px;
 .nav-list {
   display:flex;
   margin-left: 70px;
-  margin-right: 50px;
+  margin-right: -50px;
+
   outline: 2px solid tomato;
 }
 
@@ -209,9 +210,10 @@ button {
 .teams {
   background-color: var(--grey-bcg);}
 
+.team-list{
   display: flex;
+  flex-wrap: wrap;
 }
-
 .team-time {
   background-color: var(--white-text-color);
 }
@@ -281,14 +283,24 @@ margin-left: 0px;
   text-align: center;
   padding: 6px 22px;
 }
-.filter-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
+
 }
+.filter-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+.filter-item{
+
+}
+.filter-item
+
+
 .hover-bcg-color:hover,
 .hover-bcg-color:focus {
   background-color: var(--accent-color);
@@ -307,7 +319,10 @@ margin-left: 0px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
+.project-list { 
+  display: flex;
+  flex-wrap: wrap;
+}
 .project-description {
   color: var(--secondary-text-color);
 
