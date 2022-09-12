@@ -47,8 +47,9 @@ p {
 
 .main-nav {
   display: flex;
+  margin-left: 0px;
   align-items: center;
-  justify-content: space-between;
+ 
 }
 
 .visually-hidden {
@@ -62,6 +63,9 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.header-logo{
+  margin-right: 93px;
 }
 
 .header {
@@ -92,8 +96,9 @@ p {
 }
 .nav-list {
   display: flex;
-  margin-left: 70px;
-  margin-right: -50px;
+  margin-right: -120px;
+  padding-right: 20px;
+  padding-left: 10px;
 
   outline: 2px solid tomato;
 }
@@ -177,10 +182,7 @@ button {
 }
 
 /* Секція переваги */
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .adv-time {
 }
 .adv-list {
@@ -201,6 +203,7 @@ section {
 }
 .advantages {
   padding-top: 94px;
+
 }
 .adv-list {
   display: flex;
@@ -216,11 +219,20 @@ section {
   display: flex;
 }
 .direction-item {
+  margin-top: 50px;
   margin-right: 30px;
+}
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /* Секція команда */
 .teams {
   background-color: var(--grey-bcg);
+  
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
 }
 .directions {
 }
@@ -252,14 +264,18 @@ section {
   line-height: 1.19;
   text-align: center;
 }
-.team-item {
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team-img {
+  display: block;
 
+}
+
+.team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Footer */
