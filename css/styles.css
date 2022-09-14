@@ -18,6 +18,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
 }
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
 
 .container {
   width: 1230px;
@@ -47,9 +52,7 @@ p {
 
 .main-nav {
   display: flex;
-  margin-left: 0px;
-  align-items: center;
- 
+ margin-right: 5px;
 }
 
 .visually-hidden {
@@ -65,13 +68,14 @@ p {
   overflow: hidden;
 }
 .header-logo{
-  margin-right: 93px;
+  margin-right: 63px;
 }
 
 .header {
+  
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid var(--header-border-color);
+  border: 1px solid #ececec;
 }
 /* Логотип */
 .logo {
@@ -94,10 +98,16 @@ p {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+.just-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .nav-list {
   display: flex;
-  margin-right: -120px;
-  padding-right: 20px;
+
+  margin:0;
+  padding-right: 0px;
   padding-left: 10px;
 
   outline: 2px solid tomato;
@@ -268,7 +278,7 @@ button {
   display: block;
 
 }
-
+project-time
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -326,18 +336,19 @@ button {
   flex-wrap: wrap;
   justify-content: center;
 
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .filter-item:not(:last-child) {
-  margin-right: 5px;
+  margin-right: -5px;
 }
 
 .filter-item {
-  margin: 15px;
+  margin: px;
 }
 
 .item-image {
   display: block;
+
 }
 .hover-bcg-color:hover,
 .hover-bcg-color:focus {
@@ -359,9 +370,15 @@ button {
   letter-spacing: 0.06em;
 }
 .project-time {
-  padding: 15px;
-}
+  padding: 0px;
 
+}
+.description {
+  padding: 20px 24px;
+  border-right: 1px solid var(--border-project-color);
+  border-bottom: 1px solid var(--border-project-color);
+  border-left: 1px solid var(--border-project-color);
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -372,3 +389,4 @@ button {
   font-size: 16px;
   line-height: 1.88;
 }
+
