@@ -361,7 +361,7 @@ button {
 
 .project-title {
   color: var(--primary-text-color);
-
+padding-top: 10px;
   padding-left: 20px;
   font-size: 18px;
   line-height: 2;
