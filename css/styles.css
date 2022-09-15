@@ -279,7 +279,7 @@ button {
 .team-img {
   display: block;
 }
-project-time .team-item {
+ .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -349,7 +349,7 @@ margin-left: auto;
 }
 
 .item-image {
-  display: block;
+
 }
 
 .hover-bcg-color:hover,
@@ -373,11 +373,18 @@ margin-left: auto;
 }
 .project-time {
   width: calc((100% - 60px) / 3);
-  margin: 20px 10px;
-  border: 1px solid #eeeeee;
+  margin: 10 10px;
+  
 }
 
 .description :nth-child(3n + 1) {
+  padding-bottom: 0px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border: 1px solid #eeeeee;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
