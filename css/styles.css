@@ -27,7 +27,7 @@ body {
 .container {
   width: 1200px;
   padding: 0px 15px;
-  
+ 
   margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ p {
 
 .main-nav {
   display: flex;
-  margin-right: 15px;
+  margin-right: o auto ;
 }
 
 .visually-hidden {
@@ -104,7 +104,7 @@ p {
 .just-cont {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+ 
 }
 .nav-list {
   display: flex;
@@ -244,10 +244,11 @@ button {
 }
 .directions {
 }
-
+.team-title{ }
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
 }
 .team-time {
   background-color: var(--white-text-color);
@@ -292,11 +293,11 @@ project-time .team-item {
 }
 .footer-logo-margin {
   margin-bottom: 20px;
-  margin-left: 0;
-  display: inline-flex;
+margin-left: auto;
+  display: inline-block;
 }
 .contacts-footer-item:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 5px;
 }
 .footer-logo {
   color: var(--white-text-color);
